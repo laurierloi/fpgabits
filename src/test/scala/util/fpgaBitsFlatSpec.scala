@@ -9,7 +9,7 @@ import scala.collection.mutable._
 
 
 class FPGABitsFlatSpec extends ChiselFlatSpec{
-  val backendName  = "firrtl"
+  val backendName  = "verilator"
   val verbose  = true
   val saveWave = true
   val moduleName = "DefaultModuleName"

@@ -1,5 +1,20 @@
+# inspired by https://github.com/ucb-bar/dsptools/blob/master/.travis.yml
 language: scala
+sudo: false
+
 scala:
   - 2.12.7
+
+env:
+  global:
+    INSTALL_DIR=$TRAVIS_BUILD_DIR/install
+    VERILATOR_ROOT=$INSTALL_DIR
+    PATH=$PATH:$VERILATOR_ROOT/bin:$TRAVIS_BUILD_DIR/utils/bin
+
+install:
+  # dependencies
+  - bash .install_verilator.sh
+  - verilator --version
+
 script:
   - sbt test
