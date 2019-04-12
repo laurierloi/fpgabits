@@ -1,2 +1,9 @@
 *.class
 *.log
+*.un~
+.ensime
+.ensime_cache/*
+testOutput/*
+target/*
+project/*
+
