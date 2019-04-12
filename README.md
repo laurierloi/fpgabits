@@ -18,7 +18,9 @@ Using sbt, the user should follow the steps in the
 No main is provided for now, but tests are provided for the existing modules.
 
 Running:
-~~~sbt testOnly~~~
+~~~
+sbt testOnly
+~~~
 
 Will run all tests.
 
