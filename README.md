@@ -6,6 +6,7 @@ Collection of utilities to simplify FPGA accelerator design
 ### Requirements
 
 We assume that the user utilize ensime, because of it, we require it in the build.sbt
+
 See Line:
 `ensimeScalaVersion in ThisBuild := "2.12.7"`
 
@@ -18,9 +19,7 @@ Using sbt, the user should follow the steps in the
 No main is provided for now, but tests are provided for the existing modules.
 
 Running:
-~~~
-sbt testOnly
-~~~
+`sbt test`
 
 Will run all tests.
 
