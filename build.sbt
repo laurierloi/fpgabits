@@ -32,8 +32,6 @@ scalaVersion := "2.12.7"
 
 crossScalaVersions := Seq("2.11.12", "2.12.7")
 
-ensimeScalaVersion in ThisBuild := "2.12.7"
-
 resolvers ++= Seq(
   Resolver.sonatypeRepo("snapshots"),
   Resolver.sonatypeRepo("releases")
